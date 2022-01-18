@@ -115,3 +115,31 @@ span{
     border-radius: 14.6913px;
     padding: 5px;
 }
+
+
+
+/* media quaries */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .players, .blogs {
+        flex-direction: column;
+    }
+}
+
+/* Tablet screen responsive */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
